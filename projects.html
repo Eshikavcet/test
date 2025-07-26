@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Yantrika Robotics Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yan-mg2YbeAQz7nR64CSj77vgbb5c1TrAW.png" alt="Yantrika Logo" />
+      <span><strong>YANTRIKA</strong></span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Join & Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="start-btn"><i class="fas fa-rocket"></i> Join Now</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our <span class="highlight">Projects</span> & Achievements<span class="dot">.</span></h1>
+      <p>Explore the innovative robotics projects and achievements that showcase our technical excellence.</p>
+    </div>
+  </section>
+
+<section class="services">
+  <div class="section-header">
+    <span class="section-subtitle">Innovation</span>
+    <h2>All Projects</h2>
+  </div>
+
+  <div class="project-folders-grid">
+    <div class="project-folder-card" data-project-id="geoguide-bot">
+      <div class="folder-icon"><i class="fas fa-map-location-dot"></i></div>
+      <h3>GeoGuide Bot</h3>
+      <p>Voice-assisted robot for guided geographical tours.</p>
+      <span class="view-details">View Details <i class="fas fa-arrow-right"></i></span>
+    </div>
+
+    <div class="project-folder-card" data-project-id="line-following">
+      <div class="folder-icon"><i class="fas fa-road"></i></div>
+      <h3>Line Following Robot</h3>
+      <p>Robot that follows a line using IR sensors.</p>
+      <span class="view-details">View Details <i class="fas fa-arrow-right"></i></span>
+    </div>
+
+    <div class="project-folder-card" data-project-id="maze-solving">
+      <div class="folder-icon"><i class="fas fa-puzzle-piece"></i></div>
+      <h3>Maze Solving Robot</h3>
+      <p>Autonomous maze-solving robot using search algorithms.</p>
+      <span class="view-details">View Details <i class="fas fa-arrow-right"></i></span>
+    </div>
+
+    <div class="project-folder-card" data-project-id="robosoccer-bot">
+      <div class="folder-icon"><i class="fas fa-futbol"></i></div>
+      <h3>RoboSoccer Bot</h3>
+      <p>AI-powered bot for playing robotic soccer matches.</p>
+      <span class="view-details">View Details <i class="fas fa-arrow-right"></i></span>
+    </div>
+
+    <div class="project-folder-card" data-project-id="rc-car">
+      <div class="folder-icon"><i class="fas fa-car-side"></i></div>
+      <h3>RC Car</h3>
+      <p>High-performance remote-controlled vehicle project.</p>
+      <span class="view-details">View Details <i class="fas fa-arrow-right"></i></span>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Project Details Modal -->
+  <div id="projectDetailsModal" class="modal">
+    <div class="modal-content project-details-content">
+      <span class="close" onclick="closeProjectDetailsModal()">&times;</span>
+      <h2 id="projectDetailsTitle"></h2>
+      <p id="projectDetailsDescription"></p>
+      <div id="projectDetailsImages" class="project-images-grid">
+        <!-- Images will be dynamically loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h2 class="footer-logo"><span class="dot"></span> YANTRIKA <span class="dot"></span></h2>
+        <p>Empowering the next generation of roboticists and innovators.</p>
+        <div class="subscribe">
+          <hr />
+          <a href="contact.html" class="subscribe-link"><span class="dot"></span> Join Our Club</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p>Engineering Department<br>College Campus, Room 204</p>
+        <p>Email: yantrika@college.edu</p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
